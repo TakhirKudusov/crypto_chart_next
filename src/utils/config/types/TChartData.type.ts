@@ -1,12 +1,7 @@
 import { COLOR } from "@/utils/enums/color.enum";
 
 export type TChartData = {
-  series: {
-    data: {
-      x: Date;
-      y: [number, number, number, number];
-    }[];
-  }[];
+  series: ApexAxisChartSeries | ApexNonAxisChartSeries;
   options: {
     plotOptions: {
       candlestick: {

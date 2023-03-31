@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/inter': ^4.5.15
+  '@styled-icons/boxicons-regular': ^10.47.0
   '@styled-icons/heroicons-solid': ^10.47.0
   '@styled-icons/remix-fill': ^10.46.0
   '@styled-icons/typicons': ^10.46.0
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   '@fontsource/inter': 4.5.15
+  '@styled-icons/boxicons-regular': 10.47.0_hsvf4mq4wiyrkiyc3wzg6vdhxa
   '@styled-icons/heroicons-solid': 10.47.0_hsvf4mq4wiyrkiyc3wzg6vdhxa
   '@styled-icons/remix-fill': 10.46.0_hsvf4mq4wiyrkiyc3wzg6vdhxa
   '@styled-icons/typicons': 10.46.0_hsvf4mq4wiyrkiyc3wzg6vdhxa
@@ -443,6 +445,18 @@ packages:
 
   /@rushstack/eslint-patch/1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
+    dev: false
+
+  /@styled-icons/boxicons-regular/10.47.0_hsvf4mq4wiyrkiyc3wzg6vdhxa:
+    resolution: {integrity: sha512-z8KczDp4VArXvOn8i2j66Xs4oX9oiiJEhMoHydY3uC9kdtImcxhZ/xHPrgTJLkbK6f5ikwB4CKVnSqQGzzAJNw==}
+    peerDependencies:
+      react: '*'
+      styled-components: '*'
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@styled-icons/styled-icon': 10.7.0_hsvf4mq4wiyrkiyc3wzg6vdhxa
+      react: 18.2.0
+      styled-components: 5.3.9_biqbaboplfbrettd7655fr4n2y
     dev: false
 
   /@styled-icons/heroicons-solid/10.47.0_hsvf4mq4wiyrkiyc3wzg6vdhxa:

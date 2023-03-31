@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLOR } from "@/utils/enums/color.enum";
 import { useGetConfig } from "@/utils/custom_hooks/useGetConfig";
-import { transactionDataConfig } from "@/utils/config/0x2170ed0880ac9a755fd29b2688956bd959f933f8/transactionData.config";
+import { transactionDataConfig } from "@/utils/config/eth/transactionData.config";
 import { TTransactionData } from "@/utils/config/types/TTransactionData.type";
 
 const TransactionsTab = () => {

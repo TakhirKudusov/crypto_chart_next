@@ -22,7 +22,9 @@ const ChartHeader = () => {
         </ImageContainer>
         <HeaderContentContainer className="flex_column">
           <TokenNameText>{(tokenInfoConfig as TTokenInfo)?.name}</TokenNameText>
-          <TokenAddressText>{address}</TokenAddressText>
+          <TokenAddressText>
+            {(tokenInfoConfig as TTokenInfo)?.contractAddress}
+          </TokenAddressText>
         </HeaderContentContainer>
       </TokenInfoContainer>
       <PriceContainer className="flex">

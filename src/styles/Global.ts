@@ -35,8 +35,11 @@ const Global = createGlobalStyle`
   html,
   body {
     max-width: 100vw;
-    overflow-x: hidden;
     background-color: ${COLOR.BLACK};
+  }
+  
+  body {
+    overflow-x: hidden;
   }
 
   a {
@@ -64,7 +67,7 @@ const Global = createGlobalStyle`
   
   .gap_1 {
     gap: 1rem;
-  }  
+  }
 `;
 
 export { Global };

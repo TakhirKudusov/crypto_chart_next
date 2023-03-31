@@ -3,4 +3,5 @@ export type TTokenInfo = {
   growValue: string;
   price: string;
   growPercents: string;
+  contractAddress: string;
 };

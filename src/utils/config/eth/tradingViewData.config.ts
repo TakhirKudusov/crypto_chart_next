@@ -7,7 +7,7 @@ export const tradingViewDataConfig: TTradingViewData[] = [
     type: "presentation",
   },
   {
-    header: "Проект застрахован на сумму $200 000 000",
+    header: "Проект застрахован на сумму $200,000,000",
     desc: "Максимальный уровень надежности",
     type: "shield",
   },
