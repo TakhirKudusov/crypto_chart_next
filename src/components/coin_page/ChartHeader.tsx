@@ -14,11 +14,7 @@ const ChartHeader = () => {
     <HeaderContainer className="flex">
       <TokenInfoContainer className="flex gap_1">
         <ImageContainer className="rounded_border_100">
-          <Image
-            src={`/${address}/ethereum-eth-logo.png`}
-            alt="token logo"
-            fill
-          />
+          <Image src={`/${address}/logo.svg`} alt="token logo" fill />
         </ImageContainer>
         <HeaderContentContainer className="flex_column">
           <TokenNameText>{(tokenInfoConfig as TTokenInfo)?.name}</TokenNameText>

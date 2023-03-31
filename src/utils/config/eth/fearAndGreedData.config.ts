@@ -33,11 +33,11 @@ export const fearAndGreedDataConfig: TCircleData = {
             show: true,
             color: COLOR.GREEN_70,
             fontSize: "14px",
-            offsetY: -15,
+            offsetY: -10,
             fontWeight: 400,
           },
           value: {
-            offsetY: -50,
+            offsetY: -45,
             fontSize: "36px",
             color: COLOR.GREEN,
             fontWeight: 800,

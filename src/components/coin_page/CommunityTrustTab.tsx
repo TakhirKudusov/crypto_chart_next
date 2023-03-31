@@ -76,7 +76,7 @@ const PosEvalQtyDesc = styled.p`
 
 const PosEvalContainer = styled.div`
   position: relative;
-  top: -80px;
+  top: -70px;
   align-items: center;
   width: 100%;
 `;
@@ -95,7 +95,7 @@ const HeaderText = styled.h3`
 const Container = styled.div`
   align-items: center;
   padding: 15px;
-  height: 220px;
+  height: 230px;
 `;
 
 export default CommunityTrustTab;

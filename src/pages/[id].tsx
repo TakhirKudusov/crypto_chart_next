@@ -144,4 +144,7 @@ const Wrapper = styled.main<{ mounted: boolean }>`
   @media screen and (max-width: 1280px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 769px) {
+    padding-bottom: 100px;
+  }
 `;

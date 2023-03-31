@@ -33,7 +33,7 @@ export const expertsDataConfig: TCircleData = {
             show: false,
           },
           value: {
-            offsetY: -25,
+            offsetY: -20,
             fontSize: "36px",
             color: COLOR.GREEN,
             fontWeight: 800,

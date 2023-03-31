@@ -18,11 +18,13 @@ const Button: FC<Props> = ({ className }) => {
 const ExchangeIcon = styled(Exchange)`
   width: 21px;
   height: 21px;
+  color: ${COLOR.BLACK};
 `;
 
 const ButtonText = styled.span`
   font-weight: 900;
   font-size: 16px;
+  color: ${COLOR.BLACK};
 `;
 
 const StyledButton = styled.button`
