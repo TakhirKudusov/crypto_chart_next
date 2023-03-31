@@ -30,7 +30,7 @@ export default function Home() {
     <>
       <CustomHead />
       <Wrapper mounted={mounted} className="gap_1">
-        <PartsWrapper className="flex_column">
+        <PartsWrapper className="xl">
           <FirstPartContainer className="flex_column gap_1">
             <InfoTab />
             <Link
@@ -39,6 +39,7 @@ export default function Home() {
                 "https://pancakeswap.finance/swap?outputCurrency=" +
                 (tokenInfoConfig as TTokenInfo)?.contractAddress
               }
+              className="sm_none"
             >
               <Button />
             </Link>
@@ -47,12 +48,34 @@ export default function Home() {
             ))}
           </FirstPartContainer>
         </PartsWrapper>
-
         <SecondPartContainer className="flex_column gap_1">
           <ChartTab />
+          <PartsWrapper className="flex md">
+            <FirstPartContainer className="flex_column gap_1 md">
+              <InfoTab />
+              <Link
+                target="_blank"
+                href={
+                  "https://pancakeswap.finance/swap?outputCurrency=" +
+                  (tokenInfoConfig as TTokenInfo)?.contractAddress
+                }
+              >
+                <Button />
+              </Link>
+              {(tradingViewDataConfig as TTradingViewData[])?.map((el, i) => (
+                <TradingViewTab key={i} data={el} />
+              ))}
+            </FirstPartContainer>
+            <ThirdPartContainer className="flex_column gap_1">
+              <ExpertsRatingTab />
+              <CommunityTrustTab />
+              <AssessmentTab />
+              <FearAndGreedTab />
+            </ThirdPartContainer>
+          </PartsWrapper>
           <TransactionsTab />
         </SecondPartContainer>
-        <PartsWrapper>
+        <PartsWrapper className="flex xl">
           <ThirdPartContainer className="flex_column gap_1">
             <ExpertsRatingTab />
             <CommunityTrustTab />
@@ -67,6 +90,14 @@ export default function Home() {
 
 const PartsWrapper = styled.div`
   min-height: 100%;
+  flex-direction: column;
+  @media screen and (max-width: 1280px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+  }
 `;
 
 const FirstPartContainer = styled.div`
@@ -75,6 +106,13 @@ const FirstPartContainer = styled.div`
   position: sticky;
   top: 1rem;
   z-index: 1;
+  @media screen and (max-width: 1280px) {
+    position: unset;
+    top: unset;
+    z-index: unset;
+    flex-basis: 50%;
+    width: unset;
+  }
 `;
 
 const SecondPartContainer = styled.div`
@@ -82,10 +120,20 @@ const SecondPartContainer = styled.div`
 `;
 
 const ThirdPartContainer = styled.div`
-  min-width: 300px;
+  width: 300px;
   position: sticky;
   top: 1rem;
   z-index: 1;
+  @media screen and (max-width: 1280px) {
+    position: unset;
+    top: unset;
+    z-index: unset;
+    flex-basis: 50%;
+    min-width: unset;
+  }
+  @media screen and (max-width: 769px) {
+    width: 100%;
+  }
 `;
 
 const Wrapper = styled.main<{ mounted: boolean }>`
@@ -93,7 +141,7 @@ const Wrapper = styled.main<{ mounted: boolean }>`
   width: 100%;
   padding: 1rem;
   justify-content: space-between;
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1280px) {
     flex-direction: column;
   }
 `;

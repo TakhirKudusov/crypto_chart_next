@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import { Exchange } from "@styled-icons/remix-fill/Exchange";
 import { COLOR } from "@/utils/enums/color.enum";
-import { useEffect, useState } from "react";
+import { FC, memo } from "react";
 
-const Button = () => {
+type Props = {
+  className?: string;
+};
+const Button: FC<Props> = ({ className }) => {
   return (
-    <StyledButton className="rounded_border_100 flex">
+    <StyledButton className={"rounded_border_100 flex " + className}>
       <ButtonText>Buy</ButtonText>
       <ExchangeIcon />
     </StyledButton>
@@ -39,5 +42,16 @@ const StyledButton = styled.button`
   &:active {
     background-color: ${COLOR.BLUE_ACTIVE};
   }
+  @media screen and (max-width: 1280px) {
+    min-width: 100%;
+  }
+  @media screen and (max-width: 769px) {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    margin: 0 0 1rem;
+    min-width: unset;
+    width: calc(100% - 4rem);
+  }
 `;
-export default Button;
+export default memo(Button);

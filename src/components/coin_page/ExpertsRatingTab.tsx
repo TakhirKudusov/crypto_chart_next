@@ -41,6 +41,9 @@ const DescriptionText = styled.p`
   color: ${COLOR.WHITE_50};
   text-align: center;
   max-width: 230px;
+  @media screen and (max-width: 1280px) {
+    max-width: 300px;
+  }
 `;
 
 const HeaderText = styled.h3`

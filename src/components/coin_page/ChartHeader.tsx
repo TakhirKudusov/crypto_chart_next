@@ -53,17 +53,26 @@ const GrowBadge = styled.div`
   font-size: 14px;
   padding: 3px 5px;
   background-color: ${COLOR.GREEN};
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+  }
 `;
 
 const TimeText = styled.p`
   font-size: 14px;
   color: ${COLOR.WHITE_50};
+  @media screen and (max-width: 375px) {
+    font-size: 12px;
+  }
 `;
 
 const PriceText = styled.p`
   color: ${COLOR.WHITE_SECONDARY};
   font-size: 22px;
   font-weight: 700;
+  @media screen and (max-width: 375px) {
+    font-size: 18px;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -78,6 +87,9 @@ const IconContainer = styled.div`
 const GrowValueText = styled.p`
   color: ${COLOR.GREEN};
   font-weight: 500;
+  @media screen and (max-width: 375px) {
+    font-size: 14px;
+  }
 `;
 
 const PriceContainer = styled.div`
@@ -86,21 +98,34 @@ const PriceContainer = styled.div`
   justify-content: flex-end;
   gap: 0.5rem;
   flex-wrap: wrap;
+  @media screen and (max-width: 769px) {
+    justify-content: center;
+  }
 `;
 
 const TokenAddressText = styled.p`
   color: ${COLOR.WHITE_50};
   font-size: 12px;
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+  }
 `;
 
 const TokenNameText = styled.h3`
   color: ${COLOR.WHITE_SECONDARY};
   font-size: 28px;
   font-weight: 400;
+  @media screen and (max-width: 375px) {
+    font-size: 24px;
+  }
 `;
 
 const HeaderContentContainer = styled.div`
   gap: 2px;
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -113,10 +138,20 @@ const ImageContainer = styled.div`
   margin-left: 4px;
 `;
 
-const TokenInfoContainer = styled.div``;
+const TokenInfoContainer = styled.div`
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 const HeaderContainer = styled.div`
   padding: 20px;
   justify-content: space-between;
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 `;
 export default ChartHeader;

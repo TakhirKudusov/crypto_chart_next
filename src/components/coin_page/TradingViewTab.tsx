@@ -62,6 +62,9 @@ const TradingViewContainer = styled.div`
   padding: 15px 20px;
   width: 100%;
   align-items: center;
+  @media screen and (max-width: 1280px) {
+    height: 126px;
+  }
 `;
 
 export default memo(TradingViewTab);

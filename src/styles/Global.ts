@@ -45,6 +45,11 @@ const Global = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    @media screen and (max-width: 1280px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
   
   .grey_bg {
@@ -67,6 +72,27 @@ const Global = createGlobalStyle`
   
   .gap_1 {
     gap: 1rem;
+  }
+  
+  .xl {
+    display: none;
+    @media screen and (min-width: 1281px) {
+      display: flex;
+    }
+  }
+  
+  .md {
+    display: none;
+    @media screen and (max-width: 1280px) {
+      display: flex;
+    }
+  }
+  
+  .sm {
+    display: none;
+    @media screen and (max-width: 769px) {
+      display: flex;
+    }
   }
 `;
 

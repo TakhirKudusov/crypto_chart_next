@@ -59,7 +59,7 @@ const NegPrcText = styled.div`
 
 const PercentsContainer = styled.div`
   justify-content: space-between;
-  width: 100%;
+  width: 270px;
 `;
 
 const PosEvalQty = styled.p`

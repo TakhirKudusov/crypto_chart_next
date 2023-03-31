@@ -9,4 +9,5 @@ export type TTransactionData = {
   tx: string;
   bgColor: COLOR;
   fontColor: COLOR;
+  type: "buying" | "selling";
 };

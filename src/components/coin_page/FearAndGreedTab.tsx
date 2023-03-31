@@ -49,6 +49,9 @@ const HeaderText = styled.h3`
   text-transform: uppercase;
   max-width: 150px;
   text-align: center;
+  @media screen and (max-width: 1280px) {
+    max-width: unset;
+  }
 `;
 
 const Container = styled.div`

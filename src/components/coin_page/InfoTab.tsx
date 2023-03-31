@@ -11,7 +11,7 @@ const InfoTab = () => {
       {(informationConfig as TInformation[])?.map((el) => (
         <InfoBadge
           key={el.name}
-          className="flex rounded_border_100"
+          className="flex rounded_border_20"
           color={el.bgColor}
         >
           <Text color={el.nameFontColor}>{el.name}</Text>
@@ -35,6 +35,9 @@ const InfoBadge = styled.div<{ color: COLOR }>`
   align-items: center;
   height: 24px;
   gap: 10px;
+  @media screen and (max-width: 1280px) {
+    height: 66px;
+  }
 `;
 
 const InfoContainer = styled.div`
